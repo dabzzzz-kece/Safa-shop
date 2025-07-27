@@ -19,10 +19,18 @@
       padding: 30px;
       color: white;
       text-align: center;
+      position: relative;
     }
     header h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 50px;
+      width: auto;
     }
     .intro {
       padding: 40px;
@@ -93,20 +101,20 @@
 <body>
 
   <header>
+    <img src="logo.png" alt="Logo" class="logo">
     <h1>Safa Design Shop</h1>
     <p>Jual Logo design </p>
   </header>
 
   <section class="intro">
     <h2>Selamat datang!</h2>
-    <p>Kami menyediakan berbagai desain kreatif dan profesional untuk logo sound system,logo racing,thumnail youtube. Bisa custom sesuai permintaan kamu!</p>
+    <p>Kami menyediakan berbagai desain kreatif dan profesional untuk logo sound system, logo racing, thumbnail YouTube. Bisa custom sesuai permintaan kamu!</p>
   </section>
 
   <section class="gallery">
     <img src="foto 1.jpg" alt="Desain 1">
     <img src="foto 2.jpg" alt="Desain 2">
     <img src="foto 3.jpg" alt="Desain 3">
-    <img src="foto 4.jpg" alt="Desain 4">
   </section>
 
   <section class="order-form" id="order">
@@ -114,7 +122,7 @@
     <form onsubmit="return false;">
       <input type="text" id="nama" placeholder="Nama kamu" required>
       <input type="text" id="kontak" placeholder="Nomor WhatsApp kamu" required>
-      <textarea rows="5" id="pesan" placeholder="Detail pesanan kamu (contoh: desain logo safa audio degan gambar naga merah)" required></textarea>
+      <textarea rows="5" id="pesan" placeholder="Detail pesanan kamu (contoh: desain logo safa audio dengan gambar naga merah)" required></textarea>
       <button type="button" onclick="kirimWhatsApp()">Pesan via WhatsApp</button>
     </form>
   </section>
